@@ -75,7 +75,7 @@ const ConfirmOrderPage = () => {
 
   const addAddress = async (event) => {
     event.preventDefault();
-    const addAddressApiUrl = `https://luxe-lane-backend.vercel.app/api/user/update`;
+    const addAddressApiUrl = `https://e-com-psi-eight.vercel.app/api/user/update`;
     if (authToken !== null) {
       setLoadingOnApi(true);
       const sendBody = { address: addressToBeAdded }; 
@@ -103,11 +103,11 @@ const ConfirmOrderPage = () => {
   };
 
   const placeOrder= async ()=>{
-    const {data} = await axios.get("https://e-com-dusky.vercel.app/api/getkey");
+    const {data} = await axios.get("https://e-com-psi-eight.vercel.app/api/getkey");
     console.log("ketyyyy" , data.key);
     const key_id = data.key;
     if(address.length>0){
-      const placeOrderApiUrl = `https://e-com-dusky.vercel.app/api/order/payment`; 
+      const placeOrderApiUrl = `https://e-com-psi-eight.vercel.app/api/order/payment`; 
         setLoadingOnApi(true);
         const sendBody = { address: address[0],totalPrice:totalCartPrice }; 
         console.log(sendBody.totalPrice);
@@ -131,7 +131,7 @@ const ConfirmOrderPage = () => {
             description: "Test Transaction",
             image: "https://example.com/your_logo",
             order_id: result.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-            callback_url:"https://e-com-dusky.vercel.app/api/order/verifyPayment",
+            callback_url:"https://e-com-psi-eight.vercel.app/api/order/verifyPayment",
             prefill: {
                 name: "Gaurav Kumar",
                 email: "gaurav.kumar@example.com",

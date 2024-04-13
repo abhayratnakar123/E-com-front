@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.99fc4ed8.css",
+    "main.js": "/static/js/main.e95cff81.js",
+    "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
+    "static/media/penna.regular.otf": "/static/media/penna.regular.d497c73de70612d212d4.otf",
+    "index.html": "/index.html",
+    "main.99fc4ed8.css.map": "/static/css/main.99fc4ed8.css.map",
+    "main.e95cff81.js.map": "/static/js/main.e95cff81.js.map",
+    "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99fc4ed8.css",
+    "static/js/main.e95cff81.js"
+  ]
+}
